@@ -12,8 +12,10 @@ def main():
        # Toss the coin.
        print('I am going to toss the coin ten times:')
        for count in range(10):
-           my_coin.toss()                   #calls toss method of instance
-           
+           my_coin.toss()                  #calls toss method of instance
+           my_coin.__sideup = 'Heads'
+
+
            # Display the side of the coin that is facing up.
            print('This side is up:', my_coin.get_sideup())
 

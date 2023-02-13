@@ -20,8 +20,8 @@ class BankAccount:
       # from the account.
 
     def withdraw(self, amount):
-        if self.__balance >= amount:
-            self.__balance -= amount
+        if self.__balance >= abs(amount):       #abs ignores minus sign to keep from adding to account
+            self.__balance -= abs(amount)
         else:
             print('Error: Insufficient funds')
 
