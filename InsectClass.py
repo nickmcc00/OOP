@@ -10,8 +10,7 @@ class Insect:
 
 
     def length_of_flight(self):
-        if random.randint(1, 10) >= 1:
-            self.flight = "Length of Flight"
+            self.flight = random.randint(1, 10)
 
 
     def flight_length(self):

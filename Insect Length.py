@@ -2,15 +2,15 @@ import InsectClass as i
 
 def main():
 
-    len_flight = i.Insect()
+    mosquito = i.Insect()
+    housefly = i.Insect()
 
-    print('This is the length of flight:', len_flight.flight_length())
+    mosquito.length_of_flight()
+    housefly.length_of_flight()
 
+    print('The mosquito can fly up to:', mosquito.flight_length())
 
-    for count in range(1, 10):
-        len_flight.length_of_flight()
-
-    print('This is the length of flight:', len_flight.flight_length())
+    print('The housefly can fly up to:', housefly.flight_length())
 
 
 main()
