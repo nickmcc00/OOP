@@ -7,7 +7,7 @@ class Student:
         self.__name = name 
         self.__dob = dob
         self.__classification = classification
-        self.__register = ' '
+        self.__register = ''
         self.__age = 0
 
     def calc_age(self):
@@ -18,13 +18,13 @@ class Student:
         
     def calc_register(self):
         if self.__classification == 'senior':
-            self.register = '4/1 thru 4/3'
+            self.__register = '4/1 thru 4/3'
         elif self.__classification == 'junior':
-            self.register = '4/4 thru 4/6'
+            self.__register = '4/4 thru 4/6'
         elif self.__classification == 'sophomore':
-            self.register = '4/7 thru 4/9'
+            self.__register = '4/7 thru 4/9'
         elif self.__classification == 'freshman':
-            self.register = '4/10 thru 4/12'
+            self.__register = '4/10 thru 4/12'
         else:
             self.__register = 'classification not found'
 
