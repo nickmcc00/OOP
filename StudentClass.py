@@ -8,17 +8,13 @@ class Student:
         self.__dob = date_of_birth
         self.__Classification = classification
         self.__register = None
-        self.__age = 0
+        self.__stu_age = 0
 
-    def get_age(self, dob):
-        self.dob = '10/11/2001'
-        self.dob = dob.split('/')
-        dob_year = dob[2]
-        self.get_age = year - dob_year
-
-    
-    def age(self, get_age):
-        return self.__age
+    def get_age(self, dob, stu_age):
+        self.__dob = '10/11/2001'
+        self.__dob = dob.split('/')
+        self.__dob_year = dob[2]
+        self.__stu_age = year - dob_year
 
 
     def classification(self, Classification, register):
@@ -32,8 +28,12 @@ class Student:
         if self.Classification == Sr:
             self.register = '4/1 thru 4/3'
 
-    def return_age()
-
+    
+    def age(self):
+        return self.__stu_age
+    
+    def registration_date(self):
+        return self.__register
               
 
         
